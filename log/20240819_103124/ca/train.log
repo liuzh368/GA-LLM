@@ -1,0 +1,11 @@
+2024-08-19 10:31:30 INFO     [Preprocess - Load Raw Data] min UTCTimeOffset: 2009-03-14 23:12:26, max UTCTimeOffSet: 2010-10-23 03:21:34, #User: 16180, #POI: 104501, #check-in: 636512
+2024-08-19 10:31:30 INFO     [Preprocess - Filter Low Frequency User] User count: 15045, Low frequency user count: 8453, ratio: 0.56185
+2024-08-19 10:31:30 INFO     [Preprocess - Filter Low Frequency POI] POI count: 104501, Low frequency POI count: 90474, ratio: 0.86577
+2024-08-19 10:31:32 INFO     [Preprocess - Train/Validate/Test Split] Done.
+2024-08-19 10:31:32 INFO     [Preprocess - Filter Low Frequency User] User count: 6468, Low frequency user count: 1910, ratio: 0.29530
+2024-08-19 10:31:32 INFO     [Preprocess - Filter Low Frequency POI] POI count: 14018, Low frequency POI count: 4195, ratio: 0.29926
+2024-08-19 10:31:33 INFO     [Preprocess - Train/Validate/Test Split] Done.
+2024-08-19 10:32:27 INFO     [Preprocess] ignore sample num: 0, ratio: 0.0.
+2024-08-19 10:32:27 INFO     [Preprocess] pseudo session trajectory of single check-ins count: 0, ratio: 0.0.
+2024-08-19 10:32:27 INFO     [Preprocess] train shape: (190627, 20), validation shape: (18299, 21), test shape: (12791, 21)
+2024-08-19 10:32:28 INFO     [Preprocess] Done preprocessing.
