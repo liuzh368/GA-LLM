@@ -1,7 +1,6 @@
 # GA-LLM
 
 
-This repository includes the implementation of paper "[Large Language Models for Next Point-of-Interest Recommendation](https://arxiv.org/pdf/2404.17591)".
 # Install
 1. Clone this repository to your local machine.
 2. Install the enviroment by running
