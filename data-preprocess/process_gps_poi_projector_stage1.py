@@ -179,12 +179,12 @@ def main():
     # 读取数据
     train_data = pd.read_csv(f'{path}train_sample.csv')
     test_data = pd.read_csv(f'{path}test_sample.csv')
-    kqt1 = jload(f'{path}train_key_top35_llama2-longlora.json')
-    kqt2 = jload(f'{path}test_key_top35_llama2-longlora.json')
+    # kqt1 = jload(f'{path}train_key_top35_llama2-longlora.json')
+    # kqt2 = jload(f'{path}test_key_top35_llama2-longlora.json')
 
     # 生成训练数据的问答对及签到记录统计
-    qa_pairs_train, poi_count_bins_train = generate_qa_pairs(train_data, kqt=kqt1, historical_data=train_data, args=args, use_sim=use_sim)
-    qa_pairs_test, poi_count_bins_test = generate_qa_pairs(test_data, kqt=kqt2, historical_data=train_data, args=args, use_sim=use_sim)
+    qa_pairs_train, poi_count_bins_train = generate_qa_pairs(train_data, kqt=None, historical_data=train_data, args=args, use_sim=use_sim)
+    qa_pairs_test, poi_count_bins_test = generate_qa_pairs(test_data, kqt=None, historical_data=train_data, args=args, use_sim=use_sim)
 
     # 将训练问答对保存为 JSON 文件
     qa_dict_train = [{"question": q, "answer": a} for q, a in qa_pairs_train]
